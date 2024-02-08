@@ -1,0 +1,53 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    System.out.println(sum(-3, -6));
+	    System.out.println(incre(-3));
+	    System.out.println(mintosec(3));
+	    System.out.println(agetodays(1));
+	    System.out.println(sum(3, 6));
+	    System.out.println(check(3));
+
+	}
+	public static int sum(int a,int b)
+	{
+	    return (a + b);
+	}
+	public static int incre(int a)
+	{
+	    return ++a;
+	}
+	public static int mintosec(int min)
+	{
+	    return (min * 60);
+	}
+	public static int agetodays(int age)
+	{
+	    return (age * 365);
+	}
+	public static int circuitPower(int power,int voltage)
+	{
+	    return (voltage * power);
+	}
+	public static boolean check(int num)
+	{
+	    if(num > 0)
+	    {
+	        return false;
+	    }
+	    else
+	    {
+	        return true;
+	    }
+	}
+	    
+}
