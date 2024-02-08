@@ -1,0 +1,59 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    boolean arr[] = {true, false, false, true, false};
+	    String S = "This is a test";
+	    String s1 = "abc";
+	    String s2 = "bc";
+	    System.out.println(counttrue(arr));
+	    System.out.println(countword(S));
+	    System.out.println(checkEnd(s1,s2));
+
+	}
+	public static int counttrue(boolean arr[])
+	{
+	    int c = 0;
+	    for(int i=0; i < arr.length; i++)
+	    {
+	        if(arr[i] == true)
+	        {
+	            c++;
+	        }
+	    }
+	    return c;
+	}
+	public static int countword(String S)
+	{
+	    int c = 1;
+	    for(int i=0; i < S.length(); i++)
+	    {
+	        if(S.charAt(i) == ' ')
+	        {
+	            c++;
+	        }
+	    }
+	    return c;
+	}
+	public static int checkEnd(String s1, String s2)
+	{
+	    int c = 0;
+	    for(int i=0; i < s2.length() ; i++)
+	    {
+	        if(s2.charAt(s2.length() - i - 1) == s1.charAt(s2.length() - i - 1))
+	        {
+	            c++;
+	        }
+	    }
+	    return c;
+	}
+	    
+}
