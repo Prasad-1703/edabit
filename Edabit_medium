@@ -1,0 +1,82 @@
+/*Odd Up, Even Down — N Times
+Create a function that performs an even-odd transform to an array, n times. Each even-odd
+transformation:
+
+Adds two (+2) to each odd integer.
+Subtracts two (-2) from each even integer.
+Examples
+evenOddTransform([3, 4, 9], 3) ➞ [9, -2, 15] */
+
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[] = {3,4,9};
+		
+		arr = (updown(arr,3));
+		for(int i = 0; i < arr.length; i++)
+        {
+            System.out.println(arr[i]);
+        }
+	    
+	}
+	
+	public static int[] updown(int arr[], int num)
+	{
+        int val = num * 2;
+        for(int i = 0; i < arr.length; i++)
+        {
+            if((arr[i] % 2) == 1)
+            {
+                arr[i] += val;
+            }
+            else{
+                arr[i] -= val;
+            }
+        }
+        return arr;
+	}
+}
+
+
+
+
+/* 7) Sum of Odd and Even Numbers
+Write a function that takes an array of numbers and returns an array with two elements:
+
+The first element should be the sum of all even numbers in the array.
+The second element should be the sum of all odd numbers in the array.
+Example
+sumOddAndEven([1, 2, 3, 4, 5, 6]) ➞ [12, 9]
+// 2 + 4 + 6 = 12 and 1 + 3 + 5 = 9 */
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[] = {3,4,9};
+		
+		arr1 = (sumofEnD(arr));
+		for(int i = 0; i < arr.length; i++)
+        {
+            System.out.println(arr1[i]);
+        }
+	    
+	}
+	
+	public static int[] sumofEnD(int arr[])
+	{
+        int arr1[] {0,0};
+        for(int i = 0; i < arr.length; i++)
+        {
+            if((arr[i] % 2) == 1)
+            {
+                arr[0] += val;
+            }
+            else{
+                arr[1] += val;
+            }
+        }
+        return arr;
+	}
+}
