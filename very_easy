@@ -2,13 +2,19 @@
 public class Main
 {
 	public static void main(String[] args) {
-	    
+
+	    int arr[] = {10,20,3,40};
 	    System.out.println(sum(-3, -6));
 	    System.out.println(incre(-3));
 	    System.out.println(mintosec(3));
 	    System.out.println(agetodays(1));
 	    System.out.println(sum(3, 6));
 	    System.out.println(check(3));
+	    System.out.println(remainder(45,45));
+	    System.out.println(lessthan100(45,45));
+	    System.out.println(getfirstval(arr));
+	    System.out.println(divisible(1000));
+	    System.out.println(dividesEvenly(98,7));
 
 	}
 	public static int sum(int a,int b)
@@ -42,5 +48,38 @@ public class Main
 	        return true;
 	    }
 	}
-	    
+	public static int remainder(int a, int b)
+	{
+	    int c = a % b;
+	    return c;
+	}
+	public static boolean checksum(int a, int b)
+	{
+	    if ((a + b) < 100)
+	    {
+	        return true;
+	    }
+	    else
+	    {
+	        return false;
+	    }
+	}
+	public static int getfirstval(int arr[])
+	{
+	    return arr[0];
+	}
+	public static boolean divisible(int num)
+	{
+	    if((num % 100) == 0)
+	        return true;
+	       else
+	        return false;
+	}
+	public static boolean dividesEvenly(int a, int b)
+	{
+	    if((a % b) == 0)
+	        return true;
+	       else
+	        return false;
+	}
 }
