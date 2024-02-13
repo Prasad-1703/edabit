@@ -1,0 +1,152 @@
+1)Return the Sum of Two Numbers
+Create a function that takes two numbers as arguments and returns their sum.
+
+Examples
+Sum(3, 2) ➞ 5
+
+Sum(-3, -6) ➞ -9
+
+Sum(7, 3) ➞ 10
+Notes
+Don&#39;t forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you&#39;re really stuck, unlock solutions in the Solutions tab.
+
+1) Return the Next Number from the Integer Passed
+Create a function that takes a number as an argument, increments the number by +1 and returns
+the result.
+
+Examples
+Addition(0) ➞ 1
+
+Addition(9) ➞ 10
+
+Addition(-3) ➞ -2
+Notes
+Don&#39;t forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+
+If you&#39;re really stuck, unlock solutions in the Solutions tab.
+
+2) Convert Minutes into Seconds
+Write a function that takes an integer minutes and converts it to seconds.
+
+Examples
+convert(5) ➞ 300
+
+convert(3) ➞ 180
+
+convert(2) ➞ 120
+Notes
+Don&#39;t forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you&#39;re really stuck, unlock solutions in the Solutions tab.
+3)Convert Age to Days
+Create a function that takes the age in years and returns the age in days.
+
+Examples
+CalcAge(65) ➞ 23725
+
+CalcAge(0) ➞ 0
+
+CalcAge(20) ➞ 7300
+Notes
+Use 365 days as the length of a year for this challenge.
+Ignore leap years and days between last birthday and now.
+
+Expect only positive integer inputs.
+
+4) Circuit Power Calculator
+Create a function that takes voltage and current and returns the calculated power.
+
+Examples
+CircuitPower(230, 10) ➞ 2300
+
+CircuitPower(110, 3) ➞ 330
+
+CircuitPower(480, 20) ➞ 9600
+Notes
+power is voltage multiplied by current
+
+5) Is the Number Less than or Equal to Zero?
+Create a function that takes a number as its only argument and returns true if it&#39;s less than or equal
+to zero, otherwise return false.
+
+Examples
+lessThanOrEqualToZero(5) ➞ false
+
+lessThanOrEqualToZero(0) ➞ true
+
+lessThanOrEqualToZero(-2) ➞ true
+Notes
+Don&#39;t forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+
+If you&#39;re really stuck, unlock solutions in the Solutions tab.
+6) Return the Remainder from Two Numbers
+There is a single operator in C#, capable of providing the remainder of a division operation. Two
+numbers are passed as parameters. The first parameter divided by the second parameter will have a
+remainder, possibly zero. Return that value.
+
+Examples
+Remainder(1, 3) ➞ 1
+
+Remainder(3, 4) ➞ 3
+
+Remainder(-9, 45) ➞ -9
+
+Remainder(5, 5) ➞ 0
+Notes
+The tests only use positive and negative integers.
+Don&#39;t forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+If you&#39;re really stuck, unlock solutions in the Solutions tab.
+7) Less Than 100?
+Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+Examples
+lessThan100(22, 15) ➞ true
+// 22 + 15 = 37
+
+lessThan100(83, 34) ➞ false
+// 83 + 34 = 117
+
+lessThan100(3, 77) ➞ true
+Notes
+N/A
+8) Return the First Element of an Array
+Create a function that takes an array containing only numbers and return the first element.
+
+Examples
+getFirstValue([1, 2, 3]) ➞ 1
+
+getFirstValue([80, 5, 100]) ➞ 80
+
+getFirstValue([-500, 0, 50]) ➞ -500
+Notes
+The first element in an array always has an index of 0
+9) Multiple of 100
+Create a function that takes an integer and returns true if it&#39;s divisible by 100, otherwise return false.
+
+Examples
+divisible(1) ➞ false
+
+divisible(1000) ➞ true
+
+divisible(100) ➞ true
+Notes
+Don&#39;t forget to return the result.
+If you get stuck on a challenge, find help in the Resources tab.
+
+If you&#39;re really stuck, unlock solutions in the Solutions tab.
+10) Divides Evenly
+Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+
+Examples
+dividesEvenly(98, 7) ➞ true
+// 98/7 = 14
+
+dividesEvenly(85, 4) ➞ false
+// 85/4 = 21.25
+Notes
+a will always be greater than or equal to b.
