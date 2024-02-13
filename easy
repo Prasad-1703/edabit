@@ -1,0 +1,164 @@
+//Edabit easy question solution
+
+public class Main
+{
+	public static void main(String[] args) {
+
+	    boolean arr1[] = {true, false, false, true, false};
+ 	    int arr2[] = {10, 4, 1, 4, -10, -50, 32, 21};
+	    int arr3[] = {165,170,221};
+	    String S = "This is a test";
+	    String s1 = "abc";
+	    String s2 = "bc";
+	    System.out.println(counttrue(arr1));
+	    System.out.println(countword(S));
+	    System.out.println(checkEnd(s1,s2));
+	    System.out.print(calculator(10,'/',10));
+	    System.out.print(differenceMaxMin(arr2));
+	    System.out.print(equal(1, 4, 4));
+	    System.out.print(reverse("The quick brown fox"));
+
+	    arr3 = invertcolor(arr3);
+	    for (int i = 0; i < arr3.length ; i++)
+	    {
+	        System.out.println(arr3[i]);
+	    }	
+
+	}
+	public static int counttrue(boolean arr[])
+	{
+	    int c = 0;
+	    for(int i=0; i < arr.length; i++)
+	    {
+	        if(arr[i] == true)
+	        {
+	            c++;
+	        }
+	    }
+	    return c;
+	}
+	public static int countword(String S)
+	{
+	    int c = 1;
+	    for(int i=0; i < S.length(); i++)
+	    {
+	        if(S.charAt(i) == ' ')
+	        {
+	            c++;
+	        }
+	    }
+	    return c;
+	}
+	public static int checkEnd(String s1, String s2)
+	{
+	    int c = 0;
+	    for(int i=0; i < s2.length() ; i++)
+	    {
+	        if(s2.charAt(s2.length() - i - 1) == s1.charAt(s2.length() - i - 1))
+	        {
+	            c++;
+	        }
+	    }
+	    return c;
+	}
+
+	public static int calculator(int a,char b, int c)
+	{
+	    switch(b)
+	    {
+	        case '+':
+	            return (a + c);
+	            
+	        case '-':
+	            return (a - c);
+	       
+	        case '*':
+	            return (a * c);
+	            
+	        case '/':
+	            return (a / c);
+	           
+	        case '%':
+	            return (a % c);
+	        
+	        default:
+	        System.out.print("Please provide valid input");
+	            
+	    }
+	    
+	    return 0;
+	}
+
+	public static int differenceMaxMin(int arr[])
+	{
+	    
+	    int max = 0;
+	    int min = 0;
+	    
+	    for (int i = 0; i < arr.length ; i++ )
+	    {
+	        if(arr[i] < min)
+	        {
+	            min = arr[i];
+	        }
+	        else if (arr[i] > max)
+	        {
+	            max = arr[i];
+	        }
+	    }
+	    
+	    return max - min;
+	    
+	}
+
+	public static int equal(int a, int b, int c)
+	{
+	    if(a == b)
+	    {
+	        if(a == c)
+	        {
+	            return 3;
+	        }
+	        
+	        return 2;
+	    }
+	    
+	    else if(a == c)
+	    {
+	        return 2;
+	    }
+	    else if(b == c)
+	    {
+	        return 2;
+	    }
+	    
+	    return 0;
+	}
+
+	public static String reverse(String str)
+	{
+	    
+	    String rstr = "";
+	    char ch ;
+	    
+	    for (int i=0; i<str.length(); i++)
+      	    {
+        	ch= str.charAt(i); 
+        	rstr= ch + rstr; 
+      	    }
+
+	    return rstr;   
+	}
+
+	public static int[] invertcolor(int arr[])
+	{
+	    
+	    for (int i = 0; i < arr.length ; i++)
+	    {
+	        arr[i] = 255 - arr[i];
+	    }
+	    
+	    return arr;
+	}
+	    
+}
